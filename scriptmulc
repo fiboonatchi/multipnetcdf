@@ -1,0 +1,7 @@
+#!/bin/bash
+FILES=*.nc
+for fname in $FILES
+do
+        cdo mulc,2592000 ${fname} "mulc/${fname}_mulc.nc"	
+done
+
